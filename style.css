@@ -12,15 +12,15 @@ div {
     border: 1px solid #333;
 }
 
-body > div {
+/* body > div {
     display: flex;
     /* flex-direction: row; */
 
-}
+/* } */
 
-body > div > div {
+/* body > div > div {
     flex-grow: 1;
-}
+} */ 
 
 /* @media screen and (min-width: 600px) {
     body {
