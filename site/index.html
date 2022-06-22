@@ -41,11 +41,112 @@
       </ul>
     </header>
     <main class="container">
-      <section>Slider</section>
-      <section>Article à la une</section>
-      <section>Derniers articles</section>
-      <section>L'équipe</section>
-      <section>FAQ</section>
+      <!--  -->
+      <h3>Collapse</h3>
+      <!-- bouton -->
+      <a href="#contenu" class="btn btn-primary" data-bs-toggle="collapse"
+        >Contenu</a
+      >
+      <!-- contenu -->
+      <div class="collapse" id="contenu">
+        <h2>Titre</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet,
+          similique!
+        </p>
+      </div>
+
+      <h3>Accordion</h3>
+
+      <!-- Contenu -->
+      <div class="accordion" id="faq-detail">
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              type="button"
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#reponse1"
+            >
+              Question 1
+            </button>
+          </h4>
+          <div
+            class="accordion-collapse collapse"
+            id="reponse1"
+            data-bs-parent="#faq-detail"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+              quidem ducimus inventore rem iusto laborum beatae commodi nihil
+              maxime perferendis.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+              quidem ducimus inventore rem iusto laborum beatae commodi nihil
+              maxime perferendis.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              type="button"
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#reponse2"
+            >
+              Question 2
+            </button>
+          </h4>
+          <div
+            class="accordion-collapse collapse"
+            id="reponse2"
+            data-bs-parent="#faq-detail"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+              quidem ducimus inventore rem iusto laborum beatae commodi nihil
+              maxime perferendis.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+              quidem ducimus inventore rem iusto laborum beatae commodi nihil
+              maxime perferendis.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h4 class="accordion-header">
+            <button
+              type="button"
+              class="accordion-button"
+              data-bs-toggle="collapse"
+              data-bs-target="#reponse3"
+            >
+              Question 3
+            </button>
+          </h4>
+          <div
+            class="accordion-collapse collapse"
+            id="reponse3"
+            data-bs-parent="#faq-detail"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+              quidem ducimus inventore rem iusto laborum beatae commodi nihil
+              maxime perferendis.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+              quidem ducimus inventore rem iusto laborum beatae commodi nihil
+              maxime perferendis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
     </main>
     <!-- Footer -->
     <footer class="container-fluid bg-dark text-white py-4">
