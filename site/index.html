@@ -55,7 +55,7 @@
           similique!
         </p>
       </div>
-
+      <hr />
       <h3>Accordion</h3>
 
       <!-- Contenu -->
@@ -147,6 +147,95 @@
       </div>
 
       <!--  -->
+      <hr />
+      <h3>Onglets (Tabs)</h3>
+
+      <div class="nav nav-tabs">
+        <!-- <div class="nav nav-pills"> -->
+        <a
+          href=""
+          class="nav-item nav-link active"
+          e="tab"
+          data-bs-target="#tab1"
+          >Description</a
+        >
+        <a
+          href=""
+          class="nav-item nav-link"
+          data-bs-toggle="tab"
+          data-bs-target="#tab2"
+          >Guide des tailles</a
+        >
+        <a
+          href=""
+          class="nav-item nav-link"
+          data-bs-toggle="tab"
+          data-bs-target="#tab3"
+          >Avis</a
+        >
+      </div>
+
+      <div>
+        <p class="alert alert-info">
+          Veuillez sélectionner l'onget coreespondant à votre recherche
+        </p>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane show active" id="tab1">
+          Contenu de la description
+        </div>
+        <div class="tab-pane" id="tab2">Contenu du guide des tailles</div>
+        <div class="tab-pane" id="tab3">
+          <h2>Avis</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+            recusandae velit maxime.
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <h3>Onglets (vertical)</h3>
+
+      <div class="d-flex">
+        <div class="nav nav-pills d-flex flex-column me-3">
+          <a
+            href=""
+            class="nav-item nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#tab11"
+            >Description</a
+          >
+          <a
+            href=""
+            class="nav-item nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#tab12"
+            >Guide des tailles</a
+          >
+          <a
+            href=""
+            class="nav-item nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#tab13"
+            >Avis</a
+          >
+        </div>
+        <div class="tab-content border border-success p-3">
+          <div class="tab-pane show active" id="tab11">
+            Contenu de la description
+          </div>
+          <div class="tab-pane" id="tab12">Contenu du guide des tailles</div>
+          <div class="tab-pane" id="tab13">
+            <h2>Avis</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Temporibus recusandae velit maxime.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Footer -->
     <footer class="container-fluid bg-dark text-white py-4">
