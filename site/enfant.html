@@ -8,6 +8,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       defer
@@ -29,7 +33,7 @@
       </nav>
     </header> -->
     <header>
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="./home.html" class="navbar-brand ms-3">Site</a>
         <!-- <button
           class="navbar-toggler"
@@ -69,12 +73,34 @@
     </header>
     <main class="container flex-grow-1">
       <!-- Affichage du menu dans un panneau latéral -->
-      <div class="offcanvas offcanvas-start show" id="menu-lateral">
-        <div class="offcanvas-header">
-          <a href="./index.html" class="offcanvas-title">Site</a>
+      <div class="offcanvas offcanvas-start" id="menu-lateral">
+        <div class="offcanvas-header navbar-dark bg-dark">
+          <a href="./index.html" class="offcanvas-title navbar-brand">Site</a>
           <button class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
-        <div class="offcanvas-body">Menu</div>
+        <div class="offcanvas-body bg-dark">
+          <div class="navbar-nav ms-auto me-3">
+            <a href="./index.html" class="nav-link text-white"
+              ><i class="bi bi-house"></i> Accueil</a
+            >
+            <a href="./blog.html" class="nav-link text-white">Blog</a>
+            <div class="nav-item dropdown">
+              <a
+                href="./boutique.html"
+                class="nav-link text-white dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Boutique</a
+              >
+              <div class="dropdown-menu">
+                <a href="./enfant.html" class="dropdown-item">Enfant</a>
+                <a href="#" class="dropdown-item">Femme</a>
+                <a href="#" class="dropdown-item">Homme</a>
+              </div>
+            </div>
+            <a href="./contact.html" class="nav-link text-white">Contact</a>
+            <a href="#" class="nav-link text-white">FAQ</a>
+          </div>
+        </div>
       </div>
 
       <!--  -->
