@@ -63,7 +63,35 @@
       </nav>
     </header>
     <main class="container flex-grow-1">
-      <h1>Contact</h1>
+      <h1>Boutique Enfants (offcanvas)</h1>
+      <!-- Panneau "latéral" -->
+      <div class="offcanvas offcanvas-start" id="panneau">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Panneau latéral</h5>
+          <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+            eveniet inventore ipsum.
+          </p>
+          <button class="btn btn-danger" data-bs-dismiss="offcanvas">
+            Fermer
+          </button>
+          <button class="btn btn-primary">Test</button>
+        </div>
+      </div>
+      <!-- Boutons d'appel -->
+      <button
+        class="btn btn-info"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#panneau"
+      >
+        Ouvrir(btn)
+      </button>
+      <a href="#panneau" class="btn btn-warning" data-bs-toggle="offcanvas"
+        >Ouvrir(a)</a
+      >
     </main>
     <!-- Footer -->
     <footer class="container-fluid bg-dark text-white py-4 mt-4">
