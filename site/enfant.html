@@ -29,12 +29,17 @@
       </nav>
     </header> -->
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <nav class="navbar navbar-dark bg-dark">
         <a href="./home.html" class="navbar-brand ms-3">Site</a>
-        <button
+        <!-- <button
           class="navbar-toggler"
           data-bs-toggle="collapse"
           data-bs-target="#menu"
+        > -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menu-lateral"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,6 +68,16 @@
       </nav>
     </header>
     <main class="container flex-grow-1">
+      <!-- Affichage du menu dans un panneau latéral -->
+      <div class="offcanvas offcanvas-start show" id="menu-lateral">
+        <div class="offcanvas-header">
+          <a href="./index.html" class="offcanvas-title">Site</a>
+          <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">Menu</div>
+      </div>
+
+      <!--  -->
       <h1>Boutique Enfants (offcanvas)</h1>
       <!-- Panneau "latéral" -->
       <div class="offcanvas offcanvas-start" id="panneau">
